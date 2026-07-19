@@ -1,0 +1,102 @@
+/* Project 1 — The Art Class, responsive + animations */
+.p1-page { padding-top: var(--nav-height); background: #7c4141; }
+
+
+/* Hero */
+.p1-hero { background: #894848; text-align: center; padding: clamp(60px,8vw,100px) clamp(24px,5vw,60px); }
+.p1-hero-inner { max-width: 800px; margin: 0 auto; }
+.p1-hero-tag { display: inline-block; font-size: 14px; font-weight: 500; color: #fff; background: rgba(255,255,255,0.15); padding: 6px 20px; border-radius: 99px; margin-bottom: 24px; }
+.p1-hero-title { font-family: 'Antonio',sans-serif; font-size: clamp(48px,8vw,96px); font-weight: 400; color: #fff; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 24px; }
+.p1-hero-desc { font-size: clamp(14px,1.5vw,16px); color: #fff; line-height: 1.7; max-width: 700px; margin: 0 auto 24px; }
+.p1-hero-meta { font-size: clamp(13px,1.3vw,16px); color: #fff; line-height: 1.7; opacity: 0.9; }
+
+/* Section Headings */
+.p1-sec-title { font-family: 'Antonio',sans-serif; font-size: clamp(28px,4vw,42px); font-weight: 400; color: #fff; margin-bottom: 16px; }
+.p1-sec-sub { font-size: clamp(14px,1.3vw,16px); color: #fff; line-height: 1.6; margin-bottom: 32px; max-width: 1100px; }
+.p1-sec-title-dark { font-family: 'Antonio',sans-serif; font-size: clamp(28px,4vw,42px); font-weight: 400; color: #303030; margin-bottom: 16px; }
+.p1-sec-sub-dark { font-size: clamp(14px,1.3vw,16px); color: #8f8f8f; line-height: 1.6; margin-bottom: 32px; max-width: 1100px; }
+
+/* Awards */
+.p1-awards { background: #7c4141; text-align: center; padding: clamp(40px,6vw,80px) clamp(24px,5vw,60px); }
+.p1-awards-row { display: flex; justify-content: center; gap: clamp(40px,5vw,100px); max-width: 950px; margin: 40px auto 0; flex-wrap: wrap; }
+.p1-award-item { display: flex; flex-direction: column; align-items: center; gap: 8px; max-width: 423px; flex: 1 1 300px; }
+.p1-award-icon { font-size: 32px; color: #fff; }
+.p1-award-name { font-family: 'Antonio',sans-serif; font-size: 16px; font-weight: 400; color: #fff; }
+.p1-award-detail { font-size: 14px; color: #fff; line-height: 1.5; max-width: 360px; }
+
+/* Story Context */
+.p1-context { background: #7c4141; padding: clamp(40px,6vw,80px) clamp(24px,5vw,60px); }
+.p1-context-inner { max-width: 1200px; margin: 0 auto; }
+.p1-context-intro { font-size: clamp(16px,1.8vw,20px); color: #fff; line-height: 1.7; max-width: 1100px; margin-bottom: 32px; }
+.p1-context-img-main { margin-bottom: 32px; border-radius: 16px; overflow: hidden; transition: transform 0.5s ease; }
+.p1-context-img-main:hover { transform: scale(1.01); }
+.p1-context-img-main img { width: 100%; height: auto; display: block; }
+.p1-context-grid { display: grid; grid-template-columns: 640px 402px; gap: 40px; align-items: start; justify-content: center; }
+.p1-context-left h3 { font-family: 'Antonio',sans-serif; font-size: clamp(20px,2vw,24px); font-weight: 400; color: #fff; margin: 24px 0 8px; }
+.p1-context-left h3:first-child { margin-top: 0; }
+.p1-context-left p { font-size: clamp(14px,1.2vw,16px); color: #fff; line-height: 1.7; }
+.p1-context-right img { width: 402px; height: 442px; object-fit: cover; border-radius: 16px; display: block; transition: transform 0.5s ease; }
+.p1-context-right img:hover { transform: scale(1.02); }
+
+/* Characters */
+.p1-characters { background: #7c4141; padding: clamp(40px,6vw,80px) clamp(24px,5vw,60px); }
+.p1-characters-inner { max-width: 1235px; margin: 0 auto; }
+.p1-char-xueju { background: #fff; border-radius: 28px; padding: 24px; margin-bottom: 24px; display: grid; grid-template-columns: 1fr 240px 1fr; gap: 24px; align-items: start; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.p1-char-xueju:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+.p1-char-xueju h3 { font-family: 'Antonio',sans-serif; font-size: clamp(20px,2vw,24px); font-weight: 400; color: #303030; margin-bottom: 12px; }
+.p1-char-xueju p { font-size: clamp(13px,1.1vw,16px); color: #8f8f8f; line-height: 1.6; }
+.p1-char-xueju-img img { width: 240px; height: 260px; object-fit: cover; border-radius: 12px; display: block; transition: transform 0.5s ease; }
+.p1-char-xueju-img img:hover { transform: scale(1.03); }
+.p1-char-bawang { background: #fff; border-radius: 28px; padding: 24px; margin-bottom: 24px; display: grid; grid-template-columns: 400px 1fr; gap: 24px; align-items: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.p1-char-bawang:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+.p1-char-bawang-img img { width: 100%; height: 280px; object-fit: cover; border-radius: 12px; display: block; transition: transform 0.5s ease; }
+.p1-char-bawang-img img:hover { transform: scale(1.02); }
+.p1-char-bawang h3 { font-family: 'Antonio',sans-serif; font-size: clamp(20px,2vw,24px); font-weight: 400; color: #303030; margin-bottom: 12px; }
+.p1-char-bawang p { font-size: clamp(13px,1.1vw,16px); color: #8f8f8f; line-height: 1.6; }
+.p1-char-leng { background: #fff; border-radius: 28px; padding: 24px; margin-bottom: 24px; display: grid; grid-template-columns: 280px 1fr; gap: 24px; align-items: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.p1-char-leng:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+.p1-char-leng-img img { width: 100%; height: 300px; object-fit: cover; border-radius: 12px; display: block; transition: transform 0.5s ease; }
+.p1-char-leng-img img:hover { transform: scale(1.02); }
+.p1-char-leng h3 { font-family: 'Antonio',sans-serif; font-size: clamp(20px,2vw,24px); font-weight: 400; color: #303030; margin-bottom: 12px; }
+.p1-char-leng p { font-size: clamp(13px,1.1vw,16px); color: #8f8f8f; line-height: 1.6; }
+.p1-char-leng-sub { font-size: 14px !important; margin-top: 12px; }
+.p1-quote { font-family: 'Antonio',sans-serif; font-size: clamp(18px,2.5vw,24px); font-weight: 400; color: #fff; line-height: 1.4; padding-left: 24px; border-left: 3px solid #73972f; margin: 0; max-width: 1227px; }
+
+/* Cinematic Stills */
+.p1-stills { background: #fff; padding: clamp(40px,6vw,80px) clamp(24px,5vw,60px); }
+.p1-stills-inner { max-width: 1200px; margin: 0 auto; }
+.p1-stills-grid { display: flex; flex-direction: column; gap: clamp(12px,2vw,30px); }
+.p1-stills-grid img { width: 100%; height: auto; border-radius: 8px; display: block; transition: transform 0.5s ease; }
+.p1-stills-grid img:hover { transform: scale(1.01); }
+.p1-stills-row { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(12px,2vw,30px); }
+.p1-stills-row img { width: 100%; height: auto; object-fit: cover; border-radius: 8px; display: block; transition: transform 0.5s ease; }
+.p1-stills-row img:hover { transform: scale(1.01); }
+
+/* Bottom Nav */
+.p1-bottom-nav { display: flex; justify-content: space-between; align-items: center; padding: 24px clamp(24px,5vw,120px); }
+.p1-bottom-back { background: #a5c766; color: #fff; font: 400 14px 'Inter', sans-serif; padding: 10px 20px; border-radius: 8px; text-align: center; display: block; transition: opacity 0.2s; }
+.p1-bottom-next { background: #894848; color: #fff; font: 400 14px 'Inter', sans-serif; padding: 10px 20px; border-radius: 8px; text-align: center; display: block; transition: opacity 0.2s; }
+.p1-bottom-back:hover, .p1-bottom-next:hover { opacity: 0.85; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1199.98px) {
+  .p1-context-grid { grid-template-columns: 1fr; }
+  .p1-context-right { display: flex; justify-content: center; }
+  .p1-context-right img { width: 100%; max-width: 402px; height: auto; }
+  .p1-char-xueju { grid-template-columns: 1fr; }
+  .p1-char-xueju-img img { width: 200px; height: 220px; }
+  .p1-char-bawang { grid-template-columns: 1fr; }
+  .p1-char-bawang-img { max-width: 400px; }
+  .p1-char-bawang-img img { height: 240px; }
+  .p1-char-leng { grid-template-columns: 1fr; }
+  .p1-char-leng-img { max-width: 250px; }
+  .p1-char-leng-img img { height: 260px; }
+  .p1-stills-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 809.98px) {
+  .p1-hero, .p1-context, .p1-characters, .p1-stills, .p1-awards { padding: 40px 20px; }
+  .p1-hero-title { font-size: clamp(36px,10vw,56px); }
+  .p1-bottom-nav { padding: 20px 16px; flex-direction: column; gap: 12px; align-items: center; }
+  .p1-context-right img { max-width: 100%; }
+  .p1-awards-row { gap: 24px; }
+}

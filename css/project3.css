@@ -1,0 +1,93 @@
+/* Project 3 — Unconscious Mirror (The Annual Ring), purple theme #b179ac */
+.p3-page { padding-top: 72px; background: #fff; }
+
+/* Section */
+.p3-sec { padding: 80px 120px; background: #fff; }
+.p3-sec-gray { background: #f7f7f7; }
+.p3-sec-inner { max-width: 1200px; margin: 0 auto; }
+.p3-sec h2 { font: 400 42px 'Antonio',sans-serif; color: #b179ac; margin-bottom: 32px; }
+.p3-sec-purple { background: #c78cc2; border-radius: 48px; margin: 0 0; padding: 80px 120px; }
+.p3-sec-purple h2 { color: #fff; }
+.p3-sec-purple .p3-sec-inner { max-width: 1200px; margin: 0 auto; }
+
+/* Hero */
+.p3-hero { text-align: center; padding: 100px 120px 80px; background: #f7f7f7; }
+.p3-hero-tags { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 24px; }
+.p3-hero-tag { font: 500 14px 'Inter',sans-serif; color: #b179ac; }
+.p3-hero-tag-sep { width: 1px; height: 14px; background: #d9d9d9; }
+.p3-hero h1 { font: 400 96px/1.05 'Antonio',sans-serif; color: #b179ac; letter-spacing: -1.92px; margin-bottom: 24px; }
+.p3-hero-desc { font: 400 16px/1.6 'Inter',sans-serif; color: #8f8f8f; max-width: 700px; margin: 0 auto; }
+
+/* Background */
+.p3-bg-wrap { display: flex; gap: 32px; align-items: center; }
+.p3-bg-img { width: 337px; height: 354px; object-fit: cover; border-radius: 12px; flex-shrink: 0; }
+.p3-bg-right { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+.p3-bg-tags { display: flex; gap: 16px; }
+.p3-bg-tag { background: #e9d1e7; border-radius: 99px; padding: 8px 16px; font: 400 14px 'Inter',sans-serif; color: #fff; }
+.p3-bg-hl { background: #c78cc2; padding: 24px; border-radius: 16px; font: 400 18px/1.5 'Inter',sans-serif; color: #fff; }
+.p3-bg-quote { font: 400 16px/1.6 'Inter',sans-serif; color: #8f8f8f; }
+.p3-bg-quote em { font-style: italic; }
+.p3-bg-q { font: 400 24px 'Antonio',sans-serif; color: #c78cc2; }
+
+/* Psychology */
+.p3-psych-title { font: 400 32px/1.2 'Antonio',sans-serif; color: #b179ac; margin-bottom: 8px; }
+.p3-psych-desc { font: 400 16px/1.6 'Inter',sans-serif; color: #8f8f8f; margin-bottom: 32px; }
+.p3-psych-grid { display: flex; gap: 49px; overflow-x: auto; }
+.p3-psych-card { background: #fff; border: 1px solid #e6e6e6; border-radius: 12px; padding: 20px 16px; width: 200px; flex-shrink: 0; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.p3-psych-card img { height: 144px; object-fit: contain; }
+.p3-psych-card .q { font: 400 14px 'Inter',sans-serif; color: #8f8f8f; }
+.p3-psych-card .a { font: 400 12px 'Inter',sans-serif; color: #b179ac; }
+
+/* Design Goals */
+.p3-goal-quote { border-left: 3px solid #b179ac; padding-left: 24px; margin-bottom: 32px; }
+.p3-goal-quote p { font: 400 24px/1.4 'Antonio',sans-serif; color: #b179ac; }
+.p3-goal-cards { display: flex; flex-direction: column; gap: 24px; }
+.p3-goal-card { background: #fff; border: 1px solid #e6e6e6; border-radius: 28px; padding: 32px; }
+.p3-goal-card h3 { font: 400 24px 'Antonio',sans-serif; color: #b179ac; margin-bottom: 12px; }
+.p3-goal-card p { font: 400 16px/1.6 'Inter',sans-serif; color: #8f8f8f; }
+
+/* Worldview */
+.p3-world-grid { display: flex; flex-direction: column; gap: 24px; }
+.p3-world-card { background: #fff; border: 1px solid #e6e6e6; border-radius: 28px; padding: 32px; }
+.p3-world-card h3 { font: 400 24px 'Antonio',sans-serif; color: #b179ac; margin-bottom: 12px; }
+.p3-world-card p { font: 400 16px/1.6 'Inter',sans-serif; color: #8f8f8f; }
+
+/* Game Systems */
+.p3-sys-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.p3-sys-card { background: #fff; border: 1px solid #e6e6e6; border-radius: 12px; padding: 24px 20px; display: flex; gap: 24px; align-items: center; }
+.p3-sys-card img { height: 140px; object-fit: contain; flex-shrink: 0; }
+.p3-sys-card h4 { font: 500 12px 'Inter',sans-serif; color: #b179ac; margin-bottom: 8px; }
+.p3-sys-card p { font: 400 14px/1.5 'Inter',sans-serif; color: #8f8f8f; }
+
+/* Game Process */
+.p3-process-grid { display: flex; gap: 24px; justify-content: space-between; margin-bottom: 32px; }
+.p3-process-card { background: #fff; border: 1px solid #e6e6e6; border-radius: 28px; padding: 24px 16px; flex: 1; }
+.p3-process-card .icon { font-size: 24px; color: #8f8f8f; margin-bottom: 8px; }
+.p3-process-card h4 { font: 400 18px 'Antonio',sans-serif; color: #b179ac; margin-bottom: 8px; }
+.p3-process-card p { font: 400 14px/1.5 'Inter',sans-serif; color: #8f8f8f; }
+.p3-process-img { width: 100%; border-radius: 12px; }
+
+/* Outcome */
+.p3-outcome-grid { display: flex; flex-direction: column; gap: 32px; align-items: center; }
+.p3-outcome-img { width: 100%; max-width: 1200px; border-radius: 12px; }
+
+/* Bottom Nav */
+.p3-bottom { display: flex; justify-content: space-between; padding: 24px 120px; max-width: 1248px; margin: 0 auto; }
+.p3-bottom-back { background: #a5c766; color: #fff; font: 400 14px 'Inter',sans-serif; padding: 10px 20px; border-radius: 8px; }
+.p3-bottom-next { background: #894848; color: #fff; font: 400 14px 'Inter',sans-serif; padding: 10px 20px; border-radius: 8px; }
+
+@media (max-width: 1199.98px) {
+  .p3-sec, .p3-hero, .p3-sec-purple { padding-left: 40px; padding-right: 40px; }
+  .p3-hero h1 { font-size: 64px; }
+  .p3-bg-wrap { flex-direction: column; }
+  .p3-psych-grid { flex-wrap: wrap; }
+  .p3-sys-grid { grid-template-columns: 1fr; }
+  .p3-process-grid { flex-wrap: wrap; }
+  .p3-process-card { flex: 1 1 160px; }
+  .p3-bottom { padding: 24px 40px; }
+}
+@media (max-width: 809.98px) {
+  .p3-sec, .p3-hero, .p3-sec-purple { padding-left: 24px; padding-right: 24px; }
+  .p3-hero h1 { font-size: 48px; }
+  .p3-bottom { flex-direction: column; gap: 12px; align-items: center; padding: 24px; }
+}

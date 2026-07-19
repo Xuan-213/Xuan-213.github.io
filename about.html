@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>About — Zhang Zimo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-page { padding-top: 72px; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--token-surface); }
+        .about-page-inner { max-width: 720px; margin: 0 auto; padding: 100px 24px; text-align: center; }
+        .about-page-inner h1 { font: 400 clamp(36px,6vw,64px) 'Antonio',sans-serif; color: var(--token-text-primary); margin-bottom: 32px; }
+        .about-page-inner p { font: 400 clamp(16px,2vw,18px)/1.8 'Inter',sans-serif; color: var(--token-text-secondary); }
+    </style>
+</head>
+<body>
+<div class="noise-bg"></div>
+<nav class="nav" id="navbar">
+    <div class="nav-inner">
+        <a href="./" class="nav-logo">Zhang Zimo</a>
+        
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/></svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+</div>
+
+<main class="about-page">
+    <div class="about-page-inner">
+        <h1>About me</h1>
+        <p>I design AI-driven products that help people understand themselves better — whether it's a child discovering the joy of tidying up, an intern finding their growth path, or an adult untangling subconscious patterns. My work sits at the intersection of cognitive psychology, game-based learning, and emerging technology, always guided by one belief: the best tools don't just give answers — they help you ask better questions.</p>
+    </div>
+</main>
+
+<footer class="footer"><span class="footer-text">ZHANG ZIMO</span></footer>
+<div class="page-transition"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
