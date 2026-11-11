@@ -1,0 +1,7 @@
+
+/* Clear project disciplines and concise, evidence-based introductions. */
+.project-card-type{margin:14px 0 10px;font:600 clamp(11px,1vw,13px)/1.65 'Inter','Microsoft YaHei',sans-serif;letter-spacing:.025em;color:var(--token-accent,#785036)}
+.project-card-type + .project-card-desc{margin-top:0;max-width:980px;line-height:1.8}
+.p2-hero .p2-adaptation-note{margin:12px auto 0;color:#8f8f8f;font:400 12px/1.8 'Inter','Microsoft YaHei',sans-serif;letter-spacing:.015em}
+.p2-hero-tags{flex-wrap:wrap}
+@media(max-width:640px){.p2-hero-tag-sep{display:none}.p2-hero-tag{text-align:center;line-height:1.6}}
