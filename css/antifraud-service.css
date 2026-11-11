@@ -1,0 +1,43 @@
+/* Safe Guard usability testing and service blueprint */
+.p4-page .usability-study { --ut-accent:#8752b4; --ut-header:#714692; --ut-border:#e2d1f0; --ut-tint:#f5effb; --ut-text:#434343; --ut-muted:#726878; background:#f7f7f7; }
+.af-test-result { font:500 18px/1.8 'Inter','Microsoft YaHei',sans-serif; color:var(--ut-text); margin:0; }
+.service-blueprint { padding:clamp(48px,6vw,80px) clamp(20px,5vw,80px); background:#fff; color:#434343; font-family:'Inter',system-ui,'Microsoft YaHei',sans-serif; scroll-margin-top:96px; }
+.service-blueprint * { box-sizing:border-box; }
+.sb-eyebrow { color:#8752b4; font-size:12px; letter-spacing:.12em; font-weight:600; }
+.sb-heading h2 { font:400 clamp(28px,4vw,42px)/1.3 'Antonio','Microsoft YaHei',sans-serif; margin:14px 0 20px; color:#303030; }
+.sb-heading p { max-width:900px; font-size:15px; line-height:1.85; color:#726878; margin:0 0 28px; }
+.sb-persona { padding:22px 26px; border:1px solid #e2d1f0; border-radius:24px; background:#faf7fd; font-size:15px; line-height:1.8; margin:0 0 28px; }
+.sb-scroll { overflow-x:auto; width:100%; scrollbar-width:thin; }
+.sb-scroll:focus-visible { outline:2px solid #8752b4; outline-offset:4px; }
+.sb-table { width:100%; min-width:1080px; border-collapse:separate; border-spacing:8px; table-layout:fixed; font-size:13px; line-height:1.8; }
+.sb-table th,.sb-table td { padding:20px 16px; border-radius:14px; vertical-align:top; text-align:left; overflow-wrap:anywhere; }
+.sb-table thead th { background:#8752b4; color:#fff; font-weight:500; }
+.sb-table thead th:first-child { width:115px; background:#f1e8f8; color:#714692; }
+.sb-table tbody th { background:#f1e8f8; color:#714692; font-weight:600; }
+.sb-table td { background:#f7f7f7; border:1px solid #ece8ef; }
+.sb-table .sb-row-0 td { background:#fff5f2; border-color:#f0d5cc; }
+.sb-table .sb-row-1 td { background:#fbf8fe; border-color:#e2d1f0; }
+.sb-table .sb-row-2 td { background:#f3ecfa; border-color:#e2d1f0; }
+.sb-table .sb-row-3 th,.sb-table .sb-row-3 td { border-top:2px dashed #bca2cd; }
+.sb-table .sb-row-4 td { background:#f0f8f1; border-color:#d4e7d7; color:#315f3a; }
+.sb-table thead th:not(:last-child):not(:first-child)::after { content:' →'; opacity:.8; }
+.sb-decision { margin-top:28px; background:#f5effb; border-radius:24px; padding:24px 28px; }
+.sb-decision h3 { margin:0 0 14px; font-size:17px; color:#714692; font-weight:600; }
+.sb-decision ul { margin:0; padding-left:20px; display:grid; gap:10px; font-size:14px; line-height:1.8; }
+.sb-note { font-size:12px; color:#726878; line-height:1.8; margin:18px 0 0; }
+@media(min-width:1280px){.sb-decision ul{grid-template-columns:repeat(3,1fr);gap:32px}}
+[data-theme='dark'] .p4-page .usability-study { --ut-accent:#d4b3ef; --ut-header:#674586; --ut-border:#654c77; --ut-tint:#30253b; --ut-text:#eee7f3; --ut-muted:#c4b8cf; background:#242029; }
+[data-theme='dark'] .service-blueprint { background:#242029; color:#eee7f3; }
+[data-theme='dark'] .sb-heading h2,[data-theme='dark'] .sb-eyebrow,[data-theme='dark'] .sb-decision h3 { color:#d4b3ef; }
+[data-theme='dark'] .sb-heading p,[data-theme='dark'] .sb-note { color:#c4b8cf; }
+[data-theme='dark'] .sb-persona,[data-theme='dark'] .sb-decision,[data-theme='dark'] .sb-table tbody td { background:#30253b; color:#eee7f3; border-color:#654c77; }
+[data-theme='dark'] .sb-table tbody th,[data-theme='dark'] .sb-table thead th:first-child { background:#473451; color:#e4c8f5; }
+
+/* Visual experience journey aligned with the five service stages. */
+.sb-stage-icon { display:block; font-size:26px; margin-bottom:10px; line-height:1.3; }
+.sb-table .sb-experience { padding:20px 0 24px; background:#faf7fd; border-color:#e2d1f0; color:#51415e; }
+.sb-experience-caption { font-size:12px; color:#726878; padding:0 24px; margin:0 0 8px; }
+.sb-emotion-chart { display:block; width:100%; height:auto; overflow:visible; }
+.sb-experience-states { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); }
+.sb-experience-states p { padding:0 16px; margin:0; text-align:center; font-size:13px; line-height:1.8; }
+[data-theme='dark'] .sb-experience-caption { color:#c4b8cf; }

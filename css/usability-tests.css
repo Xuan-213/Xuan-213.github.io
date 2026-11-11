@@ -1,0 +1,61 @@
+/* Usability-study sections shared by the project case studies. */
+.usability-study { --ut-border:#e8ddcf; padding:clamp(48px,7vw,96px) clamp(20px,5vw,80px); background:var(--token-bg,#fff); color:var(--token-text-primary,#303030); font-family:var(--font-sans,Arial,sans-serif); }
+.usability-study * { box-sizing:border-box; }
+.ut-inner { max-width:1200px; margin-inline:auto; }
+.ut-heading { display:flex; flex-direction:column; gap:16px; margin-bottom:36px; }
+.usability-study .ut-title { margin:0; color:var(--token-text-primary,#202020); font-family:var(--font-sans,Arial,sans-serif); font-size:clamp(30px,4vw,48px); font-weight:800; font-style:italic; letter-spacing:-.045em; line-height:1.2; }
+.ut-subtitle { margin:0; max-width:650px; font-size:clamp(15px,1.3vw,18px); line-height:1.65; text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:1px; }
+.ut-overview { display:grid; gap:22px 48px; margin:0 0 42px; }
+.ut-fact { display:grid; grid-template-columns:100px minmax(0,1fr); gap:16px; align-items:start; }
+.ut-fact dt { width:fit-content; margin:0; padding-bottom:3px; border-bottom:2px solid currentColor; font-size:16px; font-weight:750; line-height:1.55; }
+.ut-fact dd { margin:0; font-size:15px; line-height:1.75; overflow-wrap:anywhere; }
+.ut-number { font-size:23px; font-weight:750; padding-inline:4px; }
+.usability-study .ut-label { color:inherit; margin:30px 0 14px; font:750 19px/1.4 var(--font-sans,Arial,sans-serif); }
+.ut-scroll { width:100%; overflow-x:auto; overscroll-behavior-inline:contain; scrollbar-width:thin; border-radius:8px; }
+.ut-scroll:focus-visible { outline:2px solid var(--token-accent,#785036); outline-offset:4px; }
+.ut-table { width:100%; min-width:700px; table-layout:fixed; border-collapse:separate; border-spacing:0 10px; margin-top:-10px; text-align:left; font-size:14px; line-height:1.8; }
+.ut-table th { padding:17px 20px; background:#161616; color:white; font-weight:650; text-align:left; }
+.ut-table th:first-child { border-radius:7px 0 0 7px; width:21%; }
+.ut-table th:last-child { border-radius:0 7px 7px 0; }
+.ut-table td { padding:20px; vertical-align:top; border-top:1px solid var(--ut-border); border-bottom:1px solid var(--ut-border); background:#fffcf8; overflow-wrap:anywhere; }
+.ut-table td:first-child { border-left:1px solid var(--ut-border); border-radius:7px 0 0 7px; font-weight:650; }
+.ut-table td:last-child { border-right:1px solid var(--ut-border); border-radius:0 7px 7px 0; }
+.ut-table td strong { font-weight:750; }
+.ut-results { margin-top:32px; }
+.ut-result-caption { margin:0 0 14px; color:var(--token-text-secondary,#747474); font-size:13px; line-height:1.7; }
+.ut-mobile-hint { margin:0 0 8px; font-size:12px; color:var(--token-text-secondary,#747474); }
+.ut-sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+[data-theme="dark"] .usability-study { --ut-border:#504a43; }
+[data-theme="dark"] .ut-table td { background:var(--token-surface,#242424); }
+@media(min-width:768px) { .ut-heading { flex-direction:row; align-items:baseline; gap:28px; } .ut-title { flex-shrink:0; } .ut-overview { grid-template-columns:1fr 1fr; gap:28px 60px; } .ut-fact { grid-template-columns:105px minmax(0,1fr); } .ut-mobile-hint { display:none; } }
+@media print { .usability-study { break-before:page; padding:24px 0; } .ut-scroll { overflow:visible; } .ut-table { min-width:0; } .ut-table tr { break-inside:avoid; } .ut-mobile-hint { display:none; } }
+
+/* Match each case study's existing visual language. */
+.p2-page .usability-study { --ut-accent:#785036; --ut-header:#785036; --ut-border:#e6d9ce; --ut-tint:#fcf5ed; --ut-text:#51453d; --ut-muted:#76695f; background:linear-gradient(237deg,rgba(245,182,142,.12),rgba(221,228,167,.14)); }
+.p3-page .usability-study { --ut-accent:#b179ac; --ut-header:#795175; --ut-border:#e9d1e7; --ut-tint:#faf5fa; --ut-text:#514650; --ut-muted:#776a75; background:#f7f7f7; }
+.usability-study { color:var(--ut-text); font-family:'Inter',system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif; scroll-margin-top:96px; }
+.usability-study .ut-title { font-family:'Antonio','Inter','Microsoft YaHei',sans-serif; font-size:clamp(28px,4vw,42px); font-weight:400; font-style:normal; letter-spacing:normal; color:var(--ut-accent); }
+.ut-heading { align-items:flex-start; gap:20px; margin-bottom:32px; }
+.ut-subtitle { color:var(--ut-muted); text-decoration:none; font-size:16px; line-height:1.7; }
+.ut-overview { gap:16px; }
+.ut-fact { padding:24px; background:#fff; border:1px solid var(--ut-border); border-radius:24px; grid-template-columns:90px minmax(0,1fr); gap:16px; }
+.ut-fact dt { border:0; padding:0; color:var(--ut-accent); font-weight:600; }
+.ut-fact dd { color:var(--ut-text); }
+.ut-number { color:var(--ut-accent); font-family:'Antonio','Inter',sans-serif; font-weight:400; font-size:28px; }
+.usability-study .ut-label { color:var(--ut-accent); font-weight:500; font-size:21px; }
+.ut-table th { background:var(--ut-header); padding:18px 24px; }
+.ut-table th:first-child { border-radius:16px 0 0 16px; }
+.ut-table th:last-child { border-radius:0 16px 16px 0; }
+.ut-table td { background:#fff; padding:24px; }
+.ut-table td:first-child { color:var(--ut-accent); border-radius:16px 0 0 16px; font-weight:600; }
+.ut-table td:last-child { border-radius:0 16px 16px 0; }
+.ut-table td strong { color:var(--ut-accent); }
+.ut-result-caption,.ut-mobile-hint { color:var(--ut-muted); }
+.ut-results { padding:24px; background:var(--ut-tint); border-radius:28px; }
+.ut-results .ut-label { margin-top:0; }
+.ut-scroll:focus-visible { outline-color:var(--ut-accent); }
+[data-theme='dark'] .p2-page .usability-study { --ut-accent:#e0b08a; --ut-header:#664730; --ut-border:#604b3c; --ut-tint:#30281f; --ut-text:#eee4da; --ut-muted:#c4b5a5; background:#25221d; }
+[data-theme='dark'] .p3-page .usability-study { --ut-accent:#d9b1d5; --ut-header:#674462; --ut-border:#60485d; --ut-tint:#2f252f; --ut-text:#eee3ec; --ut-muted:#c6b5c3; background:#242024; }
+[data-theme='dark'] .usability-study .ut-fact,[data-theme='dark'] .usability-study .ut-table td { background:var(--ut-tint); }
+@media(min-width:768px) { .ut-heading { align-items:baseline; } .ut-overview { gap:20px; } }
+@media(max-width:767px) { .ut-fact { padding:20px; grid-template-columns:80px minmax(0,1fr); gap:12px; border-radius:20px; } .ut-results { padding:20px 16px; margin-inline:-4px; } }
